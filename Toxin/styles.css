@@ -182,13 +182,13 @@ fieldset {
   width: 100%;
 
   background:
-    url(/images/arrow-forward-white.svg) no-repeat right,
+    url(images/arrow-forward-white.svg) no-repeat right,
     linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) border-box 0 / cover;
 }
 
 .button--with-arrow:hover {
   background:
-    url(/images/arrow-forward-white.svg) no-repeat right,
+    url(images/arrow-forward-white.svg) no-repeat right,
     linear-gradient(0deg, #BC9CFF 0%, #8BA4F9 100%) border-box 0 / cover;
 }
 
