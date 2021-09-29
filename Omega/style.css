@@ -448,31 +448,14 @@ h6 {
 .header__burger {
   display: none;
   position: fixed;
-  top: 57px;
+  top: 60px;
   right: 20px;
 }
 
 .header-slider {
-  /* Слайдер */
   height: 100%;
   position: relative;
   padding: 0 50px;
-  /* Слайдер запущен */
-  /* Слайдер с точками */
-  /* Ограничивающая оболочка */
-  /* Лента слайдов */
-  /* Слайд */
-  /* Слайд активный (показывается) */
-  /* Слайд основной */
-  /* Слайд по центру */
-  /* Клонированный слайд */
-  /* Стрелка */
-  /* Стрелка влево */
-  /* Стрелка вправо */
-  /* Стрелка не активная */
-  /* Точки (булиты) */
-  /* Активная точка */
-  /* Элемент точки */
 }
 
 .header-slider div {
@@ -991,10 +974,6 @@ h6 {
 }
 
 @media (max-width: 1130px) {
-  /* section {
-    padding-top: 80px;
-  } */
-
   section:first-child,
   section:last-child {
     padding-bottom: 80px;
@@ -1036,10 +1015,6 @@ h6 {
 }
 
 @media (max-width: 991.98px) {
-  /* section {
-    padding-top: 60px;
-  } */
-
   section:first-child,
   section:last-child {
     padding-bottom: 60px;
@@ -1185,8 +1160,6 @@ h6 {
     padding-top: 100px;
   }
 
-  section {}
-
   section:first-child,
   section:last-child {
     padding-bottom: 40px;
@@ -1233,8 +1206,9 @@ h6 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+       -ms-flex-align: center;
+          align-items: center;
+    padding: 1rem 0;
   }
 
   .header__navigation .container {
@@ -1557,6 +1531,9 @@ h6 {
 }
 
 @media (max-width: 426px) {
+  :root {
+    font-size: 14px;
+  }
   .block__text {
     font-size: 0.875rem;
     text-align: left;
