@@ -5,11 +5,28 @@
   padding: 1em;
 }
 
+@media (min-width: 769px) {
+  .header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    writing-mode: vertical-lr;
+    direction: ltr;
+    transform: rotate(-180deg);
+    z-index: 10;
+  }
+}
+
 .me {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+}
+
+@media (min-width: 769px) {
+  .me {
+    flex-direction: column-reverse;
+  }
 }
 
 .my-profession {

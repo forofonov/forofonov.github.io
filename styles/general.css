@@ -15,6 +15,30 @@
   height: 100%;
 }
 
+@media (min-width: 376px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 769px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1025px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1441px) {
+  :root {
+    font-size: 22px;
+  }
+}
+
 body {
   font-size: 1rem;
   height: 100%;
@@ -76,10 +100,6 @@ section {
   background-color: var(--main-color-two);
 }
 
-section + section {
-  margin-top: 1rem;
-}
-
 /* ===================== */
 .grid {
   display: grid;
@@ -87,6 +107,18 @@ section + section {
   grid-template-rows: auto 1fr auto;
 }
 
+@media (min-width: 769px) {
+  .grid {
+    grid-template-columns: minmax(10%, 15%) auto;
+    grid-template-rows: 1fr auto;
+  }
+}
+
 .hide {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
 }
