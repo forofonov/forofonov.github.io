@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color-one: rgb(0, 0, 0);
+  --main-color-two: rgb(255, 255, 255);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--main-color-one);
+  background-color: var(--main-color-two);
+  height: 100%;
+}
+
+body {
+  font-size: 1rem;
+  height: 100%;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+li {
+  text-align: justify;
+}
+
+li + li {
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:not(.navigation-link) {
+  background: linear-gradient(var(--main-color-one), var(--main-color-one)) no-repeat;
+  background-size: 100% 1px;
+  background-position: 0 1em;
+  text-shadow: .05em 0 var(--main-color-two), -.05em 0 var(--main-color-two);
+}
+
+p {
+  line-height: 1.25;
+  text-indent: .5rem;
+  text-align: justify;
+}
+
+p + p {
+  margin-top: .2rem;
+}
+
+section {
+  border: 1px solid var(--main-color-one);
+  border-radius: .2rem;
+  padding: 1rem;
+  background-color: var(--main-color-two);
+}
+
+section + section {
+  margin-top: 1rem;
+}
+
+/* ===================== */
+.grid {
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto 1fr auto;
+}
+
+.hide {
+  display: none;
+}

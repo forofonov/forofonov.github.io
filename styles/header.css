@@ -1,0 +1,17 @@
+/* === mobile === */
+.header {
+  background-color: var(--main-color-one);
+  color: var(--main-color-two);
+  padding: 1em;
+}
+
+.me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.my-profession {
+  font-size: 1.25rem;
+}

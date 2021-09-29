@@ -1,0 +1,46 @@
+.navigation {
+  /* text-align: center; */
+  transition: all .2s;
+  position: sticky;
+  top: 0;
+  padding-bottom: 1rem;
+  background-color: var(--main-color-two);
+  background: linear-gradient(var(--main-color-two) 75%, transparent);
+}
+
+.navigation-list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation-item {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: .2rem;
+}
+
+.navigation-link {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-color-one);
+  padding: .5em;
+  background: var(--main-color-two) linear-gradient(var(--main-color-two) 95%, var(--main-color-one));
+  border: 1px solid var(--main-color-one);
+  border-radius: .2rem;
+  box-shadow: 2px 2px 4px -2px var(--main-color-one);
+}
+
+.tab--active {
+  background: var(--main-color-two) linear-gradient(var(--main-color-one), var(--main-color-two) 5%);
+  box-shadow: inset 2px 2px 4px -2px var(--main-color-one);
+}
+
+.contacts-tab {
+  
+}
