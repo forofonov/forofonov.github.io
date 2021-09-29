@@ -1,5 +1,4 @@
 .navigation {
-  /* text-align: center; */
   transition: all .2s;
   position: sticky;
   top: 0;
@@ -39,8 +38,4 @@
 .tab--active {
   background: var(--main-color-two) linear-gradient(var(--main-color-one), var(--main-color-two) 5%);
   box-shadow: inset 2px 2px 4px -2px var(--main-color-one);
-}
-
-.contacts-tab {
-  
 }
