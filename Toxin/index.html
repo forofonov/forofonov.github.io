@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toxin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="container row vertical-align-center">
+      <div class="logo">
+        <img src="images/logo.svg" width="106" height="40" alt="Логотип Toxin">
+      </div>
+      <div class="nav-bar row vertical-align-center">
+        <nav class="navigation">
+          <ul class="list row">
+            <li class="list-item">
+              <a href="" class="link link--active">О нас</a>
+            </li>
+            <li class="list-item">
+              <a href="" class="link">Услуги 
+                <svg class="expand-more" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+                </svg>
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="" class="link">Вакансии</a>
+            </li>
+            <li class="list-item">
+              <a href="" class="link">Новости</a>
+            </li>
+            <li class="list-item">
+              <a href="" class="link">Соглашения
+                <svg class="expand-more" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-menu">
+          <div class="unautorized-user row">
+            <button class="button button--transparent">Войти</button>
+            <button class="button">Зарегистрироваться</button>
+          </div>
+          <div class="autorized-user hide">
+            <a href="" class="link ">Константин Константинопольский</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="">
+
+    <section class="registration">
+      <h1 class="page-title">Регистрация аккаунта</h1>
+      <form class="registration-form" action="">
+        <label class="first-name hide" for="firstName">Имя</label>
+        <input type="text" placeholder="Имя" id="firstName">
+
+        <label class="last-name hide" for="lastName">Фамилия</label>
+        <input type="text" placeholder="Фамилия" id="lastName">
+        
+        <div class="row">
+          <input type="radio" name="gender" value="man" id="man">
+          <label class="gender" for="man">Мужчина</label>
+          
+          <input type="radio" name="gender" value="woman" id="woman">
+          <label class="gender" for="woman">Женщина</label>
+        </div>
+
+        <label class="subtitle" for="dateOfBirth">Дата рождения</label>
+        <input type="date" id="dateOfBirth">
+
+        <fieldset>
+          <legend class="subtitle">Данные для входа в сервис</legend>
+          <label for="email" class="hide">Электронная почта</label>
+          <input type="email" name="email" id="email" placeholder="Email">
+
+          <label for="password" class="hide">Пароль</label>
+          <input type="password" name="password" id="password" placeholder="Пароль">
+        </fieldset>
+
+        <input type="checkbox" name="receive-offers" id="receiveOffers">
+        <label class="receive-offers" for="receiveOffers">Получать спецпредложения</label>
+
+        <button class="button button--with-arrow registration-button">Перейти к оплате</button>
+      </form>
+      <div class="row vertical-align-center">
+        <span>Уже есть аккаунт на Toxin</span>
+        <button class="button button--transparent login-button horizontal-align-left">Войти</button>
+      </div>
+    </section>
+
+    <section class="login">
+      <h1 class="page-title">Войти</h1>
+      <form class="login-form" action="">
+        <label for="email" class="hide">Электронная почта</label>
+        <input type="email" name="email" id="email" placeholder="Email">
+  
+        <label for="password" class="hide">Пароль</label>
+        <input type="password" name="password" id="password" placeholder="Пароль">
+  
+        <button class="button button--with-arrow login-button">Войти</button>
+      </form>
+
+      <div class="row vertical-align-center">
+        <span>Нет аккаунта на Toxin?</span>
+        <button class="button button--transparent registration-button horizontal-align-left">Создать</button>
+      </div>
+    </section>
+    
+    <section class="selection">
+      <h1 class="page-title">Найдём номера под ваши пожелания</h1>
+      <form action="" class="selection-form">
+
+        <label for="arrival" class="subtitle arrival">Прибытие</label>
+        <input type="date" name="arrival" id="arrival">
+
+        <label for="departure" class="subtitle departure">Выезд</label>
+        <input type="date" name="departure" id="departure">
+
+        <label for="guests" class="subtitle guests">Гости</label>
+        <select name="guests" id="guests">
+          <option value="" disabled selected>Сколько гостей</option>
+          <option value="">Взрослые</option>
+          <option value="">Дети</option>
+          <option value="">Младенцы</option>
+        </select>
+
+        <button class="button button--with-arrow" type="submit">Подобрать номер</button>
+      </form>
+    </section>
+
+    <section class="reservation">
+      <h1 class="page-title row">
+        <span class="small-text">№</span> 
+        888 
+        <span class="small-text color--purple">люкс</span>
+        <span class="small-text cost-per-day horizontal-align-left">9 990₽ <span>в сутки</span></span>
+      </h1>
+      <form action="" class="reservation-form">
+        <label for="arrival" class="subtitle arrival">Прибытие</label>
+        <input type="date" name="arrival" id="arrival">
+
+        <label for="departure" class="subtitle departure">Выезд</label>
+        <input type="date" name="departure" id="departure">
+
+        <label for="guests" class="subtitle guests">Гости</label>
+        <select name="guests" id="guests">
+          <option value="" disabled selected>Сколько гостей</option>
+          <option value="">Взрослые</option>
+          <option value="">Дети</option>
+          <option value="">Младенцы</option>
+        </select>
+
+        <div class="сost-calculation">
+          <div class="row full-cost">
+            <span class="full-cost_description">9 990₽ х 4 суток</span>
+            <span class="full-cost_value">39 960₽</span>
+          </div>
+          <div class="row service-fee">
+            <span class="service-fee_description">Сбор за услуги: </span>
+            <ul class="services-list list column">
+              <span class="service-name discount"> скидка </span><span class="service-cost">-2 179₽</span>
+              <span class="service-name discount"> скидка </span><span class="service-cost">-2 179₽</span>
+              <span class="service-name discount"> услуга </span><span class="service-cost">2 179₽</span>
+            </ul>
+            <span class="service-fee_value">-2 179₽</span>
+          </div>
+          <div class="row additional-service-fee">
+            <span class="additional-service-fee_description">Сбор за дополнительные услуги</span>
+            <ul class="additional-services-list list column">
+              <span class="additional-service-name"> услуга </span><span class="additional-service-cost">179₽</span>
+              <span class="additional-service-name"> услуга </span><span class="additional-service-cost">379₽</span>
+              <span class="additional-service-name"> услуга </span><span class="additional-service-cost">579₽</span>
+            </ul>
+            <span class="additional-service-fee_value">1 137₽</span>
+          </div>
+          <div class="row">
+            <span class="">Итого</span>
+            <span class="">38 918₽</span>
+          </div>
+        </div>
+
+        <button class="button button--with-arrow" type="submit">Забронировать</button>
+      </form>
+    </section>
+
+    <section class="room-card">
+      <div class="slider">
+        <img src="/images/room-card-image.jpg" width="270" height="151" alt="Фотография номера 888">
+      </div>
+      <h2 class="title row">
+        <span class="small-text">№</span> 
+        888 
+        <span class="small-text color--purple">люкс</span>
+        <span class="small-text cost-per-day horizontal-align-left">9 990₽ <span>в сутки</span></span>
+      </h2>
+      <div class="rating row">
+        <div class="star-rating"></div>
+        <a href="" class="reviews">145 Отзывов</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-top row">
+          <div class="logo footer-logo">
+            <img src="images/logo.svg" width="106" height="40" alt="Логотип Toxin">
+            <p class="description">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+          </div>
+          <nav class="navigation">
+            <div class="navigation-item">
+              <h3 class="subtitle">Навигация</h3>
+              <ul class="list">
+                <li class="list-item">
+                  <a href="" class="link">О нас</a>
+                </li>
+                <li class="list-item">
+                  <a href="" class="link">Новости</a>
+                </li>
+                <li class="list-item">
+                  <a href="" class="link">Служба поддержки</a>
+                </li>
+                <li class="list-item">
+                  <a href="" class="link">Услуги</a>
+                </li>
+              </ul>
+            </div>
+            <div class="navigation-item">
+              <h3 class="subtitle">О нас</h3>
+              <ul class="list">
+                <li class="list-item">
+                  <a href="" class="link">О сервисе</a>
+                </li>
+                <li class="list-item">
+                  <a href="" class="link">Наша команда</a>
+                </li>
+                <li class="list-item">
+                  <a href="" class="link">Вакансии</a>
+                </li>
+                <li class="list-item">
+                  <a href="" class="link">Инвесторы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="navigation-item">
+              <h3 class="subtitle">Служба поддержки</h3>
+              <ul class="list">
+                <li class="list-item">
+                  <a href="" class="link">Соглашения</a>
+                </li>
+                <li class="list-item">
+                  <a href="" class="link">Сообщества</a>
+                </li>
+                <li class="list-item">
+                  <a href="" class="link">Связь с нами</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="subscription">
+            <h3 class="subtitle">Подписка</h3>
+            <p>Получайте специальные предложения и новости сервиса</p>
+            <form action="" class="subscription-form">
+              <input type="email" placeholder="Email" class="subscription-input">
+              <button type="submit" class="subscription-button"><img src="/images/arrow-forward.svg" alt=""></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <div class="container">
+        <div class="copy-row">
+          <span>Copyright © 2018 Toxin отель. Все права защищены.</span>
+          <ul class="social-list list row">
+            <li class="social-item item">
+              <a href="" class="social-link link">
+                <img src="/images/twitter.svg" alt="Twitter icon">
+              </a>
+            </li>
+            <li class="social-item item">
+              <a href="" class="social-link link">
+                <img src="/images/facebook.svg" alt="Facebook icon">
+              </a>
+            </li>
+            <li class="social-item item">
+              <a href="" class="social-link link">
+                <img src="/images/instagram.svg" alt="Instagram icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
