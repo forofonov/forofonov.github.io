@@ -85,12 +85,11 @@ a:not(.navigation-link) {
 
 p {
   line-height: 1.25;
-  text-indent: .5rem;
   text-align: justify;
 }
 
 p + p {
-  margin-top: .2rem;
+  margin-top: 1rem;
 }
 
 section {
